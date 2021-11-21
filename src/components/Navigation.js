@@ -1,25 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
     return (
         <div>
-            <Navlink
-                to = '/'
-                exact
-                style={link}
-                activeStyle={{
-                    background: 'orange'
-                }}
-            >Home</Navlink>
-            
-            <Navlink
-                to = '/teams'
-                exact
-                style={link}
-                activeStyle={{
-                    background: 'orange'
-                }}
-            >Teams</Navlink>
+            <NavLink to = '/' exact >Home</NavLink>
+            <NavLink to = '/teams' exact >Teams</NavLink>
         </div>
     )
 }
