@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Player = () => {
+const Player = ({player}) => {
     return (
         <div>
-            
+            <h3>{player.name}</h3>
+            <br/>
         </div>
     )
 }
