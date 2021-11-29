@@ -7,7 +7,7 @@ const PlayerForm = () => {
     const [ player, setPlayer ] = useState({
         name: '',
         position: '',
-        team: ''
+        team_id: null
     })
 
 
@@ -25,7 +25,7 @@ const PlayerForm = () => {
         setPlayer({
             name: '',
             position: '',
-            team: ''
+            team: null
         })
     }
 
@@ -39,7 +39,7 @@ const PlayerForm = () => {
             body: JSON.stringify({
                 name: player.name,
                 position: player.position,
-                team_id: player.team
+                team_id: player.team_id
             })
         })
     }
@@ -68,7 +68,8 @@ const PlayerForm = () => {
             </div>
             <div>
                 <label>Team</label>
-                <select value={player.team} onChange={handleChange} >
+                <select name="team_id" value={player.team_id} onChange={handleChange} >
+                    <option value="null" disabled selected hidden>Select Team</option>
                     {teamsList}
                 </select>
                 <br/>
