@@ -25,7 +25,6 @@ const TeamForm = () => {
     }
 
     const addTeam = (team) => {
-        console.log(team)
         fetch(`http://localhost:9292/teams`, {
             method: "POST",
             headers: {
