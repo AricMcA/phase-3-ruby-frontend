@@ -8,8 +8,6 @@ const Team = () => {
         players: []
     })
 
-    const [ playerFormFlag, setPlayerFormFlag ] = useState(false)
-
     const params = useParams()
 
     useEffect(() => {
@@ -20,8 +18,10 @@ const Team = () => {
         })
     }, [])
 
-    const players = team.players.map( p => <Player key = {p.id} player = {p} />)
+    
 
+    const players = team.players.map( p => <Player key = {p.id} player = {p} />)
+    console.log(players)
     return (
         <div>
             <br/>
@@ -30,7 +30,7 @@ const Team = () => {
             <h3>Players</h3>
             <br/>
             {players}
-            <br/>            
+            <br/>
         </div>
     )
 }
