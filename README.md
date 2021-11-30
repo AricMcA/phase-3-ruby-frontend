@@ -69,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # phase-3-ruby-frontend
+
+This is the frontend for my phase 3 ruby backend linked here:
+
+https://github.com/AricMcA/phase-3-sinatra-react-project

@@ -21,7 +21,6 @@ const Team = () => {
     
 
     const players = team.players.map( p => <Player key = {p.id} player = {p} />)
-    console.log(players)
     return (
         <div>
             <br/>

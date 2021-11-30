@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
     return (
-        <div>
+        <div class="p-16">
             <NavLink to = '/' exact >Home</NavLink>
             <NavLink to = '/teams' exact >Teams</NavLink>
             <NavLink to = '/players/new' exact >Create Player</NavLink>
