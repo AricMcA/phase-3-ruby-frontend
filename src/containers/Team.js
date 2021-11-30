@@ -24,9 +24,10 @@ const Team = () => {
     return (
         <div>
             <br/>
-            <h2>{team.name}</h2>
+            <h2 class="font-mono text-5xl">{team.name}</h2>
+            <br/>
+            <h3 class="font-mono text-3xl">Players</h3>
             <hr/>
-            <h3>Players</h3>
             <br/>
             {players}
             <br/>

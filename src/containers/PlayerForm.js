@@ -56,26 +56,26 @@ const PlayerForm = () => {
     
     return (
         <div className="form">
-        <h3>Create a Player</h3>
+        <h3 class="font-mono text-lg">Create a Player</h3>
         <form onSubmit={ handleSubmit }>
             <div>
-                <label>Name</label>
-                <input type="text" name="name" value={ player.name } onChange={ handleChange } />
+                <label class="font-mono text-lg">Name:</label>
+                <input type="text" name="name" value={ player.name } onChange={ handleChange } class="box-border h-5 w-32 p-4 border-2 border-black"/>
             </div>
             <div>
-                <label>Position</label>
-                <input type="text" name="position" value={ player.position } onChange={ handleChange } />
+                <label class="font-mono text-lg">Position:</label>
+                <input type="text" name="position" value={ player.position } onChange={ handleChange } class="box-border h-5 w-32 p-4 border-2 border-black"/>
             </div>
             <div>
-                <label>Team</label>
+                <label class="font-mono text-lg">Team:</label>
                 <select name="team_id" value={player.team_id} onChange={handleChange} >
                     <option value="null" disabled selected hidden>Select Team</option>
                     {teamsList}
                 </select>
                 <br/>
             </div>
-            
-            <input type="submit" value="Create Player" />
+            <br/>
+            <input type="submit" value="Create Player" class="bg-green-400"/>
         </form>
         </div>
     )

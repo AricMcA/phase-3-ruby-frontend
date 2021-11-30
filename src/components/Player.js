@@ -11,15 +11,14 @@ const Player = ({player}) => {
             }
         })
         .then(res => res.json)
-        .then(data => {
-            console.log("player: ", player)
-        })
     }
     
     return (
         <div>
-            <h3>{player.name}</h3>
-            <button onClick = {deletePlayer}>delete</button>
+            <h3 class="font-mono text-lg">{player.name}</h3>
+            <h3 class="font-mono">{player.position}</h3>
+            <button onClick = {deletePlayer} class="text-red-700 text-opacity-100 ...">DELETE</button>
+            <br/>
             <br/>
         </div>
     )

@@ -40,14 +40,14 @@ const TeamForm = () => {
     return (
         <div>
             <br/>
-            <h3>Create Team</h3>
+            <h3 class="font-mono text-lg">Create Team</h3>
             <form onSubmit={ handleSubmit }>
                 <div>
-                    <label>Name</label>
-                    <input type="text" name="name" value={ team.name } onChange={ handleChange } />
+                    <label class="font-mono text-lg">Name:</label>
+                    <input type="text" name="name" value={ team.name } onChange={ handleChange } class="box-border h-5 w-32 p-4 border-2 border-black"/>
                 </div>
-
-                <input type="submit" value="Create Team" />
+                <br/>
+                <input type="submit" value="Create Team" class="bg-green-400"/>
             </form>
 
             
