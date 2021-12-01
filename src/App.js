@@ -7,6 +7,7 @@ import Teams from './containers/Teams';
 import Team from './containers/Team';
 import PlayerForm from "./containers/PlayerForm";
 import TeamForm from "./containers/TeamForm";
+import Players from "./components/Players";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path = '/teams/:id' element = {<Team />} />
           <Route exact path="/players/new" element = {<PlayerForm /> } />
           <Route exact path= '/teams/new' element = {<TeamForm /> } />
+          <Route exact path= '/players' element = {<Players players={players}/>} />
         </Routes>
       </div>
     </Router>

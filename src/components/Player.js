@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 
 const Player = ({player}) => {
 
@@ -10,7 +10,6 @@ const Player = ({player}) => {
                 "Accept": "application/json"
             }
         })
-        .then(res => res.json)
     }
     
     return (
